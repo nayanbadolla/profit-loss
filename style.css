@@ -10,7 +10,7 @@ body {
 }
 
 header, footer {
-    background-color: purple;
+    background-color: rgb(63, 63, 63);
     color: white;
     padding: 2em;
 }
@@ -25,7 +25,7 @@ h3 {
 }
 
 input {
-    border: 2px solid purple;
+    border: 2px solid rgb(63, 63, 63);
     padding: 0.5em 1em;
     margin-bottom: 1em;
     font-size: medium;
@@ -33,7 +33,7 @@ input {
 
 button {
     padding: 0.5em 1em;
-    background-color: purple;
+    background-color: rgb(63, 63, 63);
     color: white;
     font-size: large;
     border-radius: 0.5em;
