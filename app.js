@@ -15,13 +15,14 @@ checkBtn.addEventListener('click', function () {
         var sp=curr*quant
         price=sp-cp
     
-        if (price<0) {
-            loss=profit
+        // if (price<0) {
+        if (sp<cp) {
+            loss=cp-sp
             lcent=(loss/cp)*100
-            output.innerHTML=`<h3>you are making a profit of ${loss} which is ${lcent}%</h3>`
+            output.innerHTML=`<h3>you are making a loss of ${loss} which is ${lcent}%</h3>`
         }
-        else if (price>0) {
-            profit=price
+        else if (cp<sp) {
+            profit=sp-cp
             pcent=(profit/cp)*100
             output.innerHTML=`<h3>you are making a profit of ${profit} which is ${pcent}%</h3>`
         }
