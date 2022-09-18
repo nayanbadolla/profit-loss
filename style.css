@@ -16,7 +16,9 @@ header, footer {
 }
 
 .container {
-    height: 64vh;
+    background-image: url('https://www.captiveinternational.com/media/image/shutterstock_1695151366_na_studio.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
     padding: 2em;
 }
 
@@ -43,7 +45,26 @@ button {
 footer h1 {
     padding-bottom: 0.5em;
 }
+
 .links {
     margin: 2em;
     color: white;
+}
+
+.code a {
+    color: rgb(63, 63, 63);
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.code a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        background-image: none;
+    }
 }
